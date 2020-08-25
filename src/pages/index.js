@@ -6,6 +6,7 @@ import HeroHome from "../components/home/HeroHome";
 import SEO from "../components/seo";
 import NavbarHome from "../components/home/NavbarHome";
 import BookSummery from "../components/home/BookSummery";
+import BuyOptions from "../components/BuyOptions";
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <HeroHome />
     <NavbarHome />
     <BookSummery />
+    <BuyOptions />
   </Layout>
 );
 

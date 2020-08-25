@@ -16,10 +16,9 @@ export default styled(Title)`
     color: var(--TextColor);
     font-weight: 400;
     line-height: 3;
-    letter-spacing: 3;
     text-transform: uppercase;
     border-bottom: 1px solid #636365;
     color: ${(props) =>
-      props.lite ? "var(--textColorLight)" : "var(--textColor);"};
+      props.lite ? "var(--textColorLight)" : "var(--textColor)"};
   }
 `;
