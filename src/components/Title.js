@@ -18,6 +18,8 @@ export default styled(Title)`
     line-height: 3;
     text-transform: uppercase;
     border-bottom: 1px solid #636365;
+    border-bottom: ${(props) =>
+      props.lite ? "1px solid #636365" : "1px solid #C5C5C5"};
     color: ${(props) =>
       props.lite ? "var(--textColorLight)" : "var(--textColor)"};
   }

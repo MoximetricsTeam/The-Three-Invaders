@@ -8,7 +8,7 @@ function BookCover({ className }) {
     {
       file: file(relativePath: { eq: "book-cover.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 700) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }

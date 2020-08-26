@@ -26,9 +26,9 @@ function BuyOptions({ className }) {
 
 export default styled(BuyOptions)`
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 90px auto;
   padding-bottom: 25px;
-  border-bottom: 1px solid #636365;
+  border-bottom: 1px solid #c5c5c5;
   .container {
     display: flex;
     flex-wrap: wrap;
