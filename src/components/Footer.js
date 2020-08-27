@@ -45,7 +45,7 @@ export default styled(Footer)`
     align-items: center;
   }
   .logo {
-    margin: 45px auto 25px;
+    margin: 45px auto 35px;
     width: 300px;
   }
   .socialIcons {
@@ -61,5 +61,12 @@ export default styled(Footer)`
   .credit {
     color: gray;
     text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 450px) {
+    .logo {
+      width: 250px;
+    }
   }
 `;

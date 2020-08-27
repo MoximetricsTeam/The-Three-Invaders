@@ -54,14 +54,30 @@ export default styled(BpSum)`
   .wrapper {
     display: flex;
     justify-content: space-around;
+    margin-top: 80px;
   }
   .mockUp {
     width: 50%;
     z-index: 1;
-    margin-bottom: -70px;
+    margin-bottom: -80px;
   }
   .textContainer {
     width: 40%;
     margin: auto;
+  }
+  @media (max-width: 450px) {
+    .wrapper {
+      display: flow-root;
+      margin-top: 40px;
+    }
+    .mockUp {
+      width: 100%;
+      margin-bottom: 0;
+      padding-right: 40px;
+    }
+    .textContainer {
+      width: 100%;
+      padding: 20px;
+    }
   }
 `;
