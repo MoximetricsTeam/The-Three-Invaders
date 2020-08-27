@@ -67,4 +67,26 @@ export default styled(Quote)`
     border-right: none;
     left: 0;
   }
+  @media (max-width: 450px) {
+    .frame {
+      padding: 60px 0;
+      margin: 0 20px;
+    }
+    .wrapper {
+      padding: 50px 0;
+    }
+    .text {
+      font-size: 24px;
+      line-height: 35px;
+      padding: 0 40px;
+    }
+    .subText {
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      padding: 0 40px;
+      width: 100%;
+      bottom: -8%;
+    }
+  }
 `;

@@ -65,4 +65,21 @@ export default styled(Author)`
   .textContainer {
     width: 60%;
   }
+
+  @media (max-width: 450px) {
+    .container {
+      margin: 40px 20px;
+      padding: 0;
+    }
+    .innerContainer {
+      display: flow-root;
+    }
+    .textContainer {
+      width: 100%;
+    }
+    .imgContainer {
+      width: 60%;
+      margin: 0 auto 20px;
+    }
+  }
 `;
