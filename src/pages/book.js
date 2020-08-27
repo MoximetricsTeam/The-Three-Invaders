@@ -7,6 +7,7 @@ import BuyOptions from "../components/BuyOptions";
 import Quote from "../components/Quote";
 import BpSum from "../components/book/BpSum";
 import BookImgComp from "../components/book/BookImgComp";
+import Video from "../components/video";
 
 const SecondPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const SecondPage = () => (
     <BpSum />
     <BookImgComp />
     <BuyOptions />
+    <Video />
     <Quote />
   </Layout>
 );
