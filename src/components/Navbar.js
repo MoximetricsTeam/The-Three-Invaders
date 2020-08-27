@@ -1,13 +1,19 @@
 import React from "react";
-import { Link } from "gatsby";
-import links from "../../constants/links";
 import styled from "styled-components";
+import { Link } from "gatsby";
+import Logo from "./logo";
+import links from "../constants/links";
 
-function NavbarHome({ className }) {
+function Navbar({ className }) {
   return (
-    <section className={className}>
-      <div className="wrapper">
-        <div className="container">
+    <nav className={className}>
+      <div className="navContainer">
+        <div className="logo">
+          <Link to="/">
+            <Logo />
+          </Link>
+        </div>
+        <div className="links">
           {links.map((item, index) => {
             return (
               <span key={index}>
@@ -19,25 +25,28 @@ function NavbarHome({ className }) {
           })}
         </div>
       </div>
-    </section>
+    </nav>
   );
 }
 
-export default styled(NavbarHome)`
-  .wrapper {
+export default styled(Navbar)`
+  .navContainer {
     display: flex;
-    justify-content: flex-end;
-    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
     background: var(--secondaryColor);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
     padding: 0 50px;
   }
-  .container {
-    width: 50%;
-    height: 100%;
+  .logo {
+    width: 210px;
+  }
+  .links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+    width: 50%;
+    justify-content: space-evenly;
   }
   .link {
     font-size: 18px;
@@ -47,8 +56,5 @@ export default styled(NavbarHome)`
     text-transform: uppercase;
     text-decoration: none;
     padding-left: 5px;
-  }
-  @media (max-width: 450px) {
-    display: none;
   }
 `;

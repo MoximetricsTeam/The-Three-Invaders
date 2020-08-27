@@ -56,4 +56,7 @@ export default styled(BuyOptions)`
     width: 100%;
     padding: 3px 0;
   }
+  @media (max-width: 450px) {
+    margin: 40px 20px;
+  }
 `;

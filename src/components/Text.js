@@ -11,4 +11,8 @@ export default styled(Text)`
   line-height: 1.6;
   letter-spacing: 1.5;
   text-align: justify;
+
+  @media (max-width: 450px) {
+    font-size: 16px;
+  }
 `;

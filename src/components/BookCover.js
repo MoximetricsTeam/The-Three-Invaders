@@ -118,4 +118,49 @@ export default styled(BookCover)`
     border-radius: 0 2px 2px 0;
     box-shadow: -10px 0 50px 10px #666;
   }
+  /* Mobile Style */
+  @media (max-width: 450px) {
+    .book-container {
+      perspective: 600px;
+    }
+
+    @keyframes initAnimation {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(-20deg);
+      }
+    }
+
+    .book {
+      width: 250px;
+      height: 375px;
+      transform: rotateY(-20deg);
+    }
+
+    .book:hover {
+      transform: rotateY(0deg);
+    }
+
+    .book > :first-child {
+      width: 250px;
+      height: 375px;
+      transform: translateZ(25px);
+    }
+
+    .book::before {
+      top: 3px;
+      width: 48px;
+      height: 369px;
+      transform: translateX(222px) rotateY(90deg);
+    }
+
+    .book::after {
+      width: 250px;
+      height: 375px;
+      transform: translateZ(-25px);
+    }
+  }
+  /* Mobile Style */
 `;
