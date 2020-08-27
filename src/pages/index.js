@@ -9,6 +9,7 @@ import BookSummery from "../components/home/BookSummery";
 import BuyOptions from "../components/BuyOptions";
 import Author from "../components/home/Author";
 import Quote from "../components/Quote";
+import Video from "../components/Video";
 
 const IndexPage = () => (
   <Layout>
@@ -17,6 +18,7 @@ const IndexPage = () => (
     <NavbarHome />
     <BookSummery />
     <BuyOptions />
+    <Video />
     <Author />
     <Quote />
   </Layout>
