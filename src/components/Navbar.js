@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Logo from './logo';
+import Logo from './Logo';
 import links from '../constants/links';
 import Burger from './Burger';
 import MobileMenu from './MobileMenu';
