@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Img from "gatsby-image";
-import Title from "../../components/title";
-import Text from "../../components/text";
-import { graphql, useStaticQuery } from "gatsby";
+import React from 'react';
+import styled from 'styled-components';
+import Img from 'gatsby-image';
+import Title from '../../components/Title';
+import Text from '../../components/Text';
+import { graphql, useStaticQuery } from 'gatsby';
 
 function BpSum({ className }) {
   const data = useStaticQuery(graphql`
@@ -19,11 +19,11 @@ function BpSum({ className }) {
   `);
   return (
     <section className={className}>
-      <div className="wrapper">
-        <div className="mockUp">
+      <div className='wrapper'>
+        <div className='mockUp'>
           <Img fluid={data.file.childImageSharp.fluid} />
         </div>
-        <div className="textContainer">
+        <div className='textContainer'>
           <Title>
             <h1>The Three Invader</h1>
           </Title>

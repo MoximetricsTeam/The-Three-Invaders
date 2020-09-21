@@ -1,13 +1,13 @@
-import React from "react";
-import Title from "../../components/Title";
-import styled from "styled-components";
-import BookCover from "../../components/BookCover";
-import Text from "../../components/text";
+import React from 'react';
+import Title from '../../components/Title';
+import styled from 'styled-components';
+import BookCover from '../../components/BookCover';
+import Text from '../../components/Text';
 function BookSummery({ className }) {
   return (
     <section className={className}>
-      <BookCover className="cover" />
-      <div className="textContainer">
+      <BookCover className='cover' />
+      <div className='textContainer'>
         <Title lite>
           <h1>The Three Invader</h1>
         </Title>
