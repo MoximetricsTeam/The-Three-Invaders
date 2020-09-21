@@ -1,9 +1,9 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
-import styled from "styled-components";
-import Title from "../../components/title";
-import Text from "../../components/text";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import styled from 'styled-components';
+import Title from '../../components/Title';
+import Text from '../../components/Text';
 
 function Author({ className }) {
   const data = useStaticQuery(graphql`
@@ -19,15 +19,15 @@ function Author({ className }) {
   `);
   return (
     <section className={className}>
-      <div className="container">
+      <div className='container'>
         <Title center>
           <h2>About Dr. Saleem I. Abdulrauf</h2>
         </Title>
-        <div className="innerContainer">
-          <div className="imgContainer">
+        <div className='innerContainer'>
+          <div className='imgContainer'>
             <Img fluid={data.placeholderImage.childImageSharp.fluid} />
           </div>
-          <div className="textContainer">
+          <div className='textContainer'>
             <Text>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

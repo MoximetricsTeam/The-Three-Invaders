@@ -1,12 +1,12 @@
-import React from "react";
-import styled from "styled-components";
-import Title from "../../components/title";
-import Text from "../../components/text";
+import React from 'react';
+import styled from 'styled-components';
+import Title from '../../components/Title';
+import Text from '../../components/Text';
 
 function BioBody({ className }) {
   return (
     <section className={className}>
-      <div className="wrapper">
+      <div className='wrapper'>
         <Title>
           <h1>About Dr. Saleem I. Abdulrauf</h1>
         </Title>
