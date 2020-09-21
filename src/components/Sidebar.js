@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Logo from './logo';
+import Logo from './Logo';
 import links from '../constants/links';
 
 const Sidebar = () => {
