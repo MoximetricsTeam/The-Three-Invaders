@@ -1,23 +1,23 @@
-import React from "react";
-import Logo from "./logo";
-import styled from "styled-components";
-import socialIcons from "../constants/social-icons";
+import React from 'react';
+import Logo from './Logo';
+import styled from 'styled-components';
+import socialIcons from '../constants/social-icons';
 function Footer({ className }) {
   return (
     <footer className={className}>
-      <div className="wrapper">
-        <div className="logo">
+      <div className='wrapper'>
+        <div className='logo'>
           <Logo />
         </div>
 
-        <div className="socialIcons">
+        <div className='socialIcons'>
           {socialIcons.map((item, index) => {
             return (
               <a
                 key={index}
                 href={item.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 {item.icon}
               </a>
@@ -25,10 +25,10 @@ function Footer({ className }) {
           })}
         </div>
 
-        <div className="credit">
+        <div className='credit'>
           © {new Date().getFullYear()}, Web Design by
           {` `}
-          <a className="credit" href="https://www.moximetrics.org">
+          <a className='credit' href='https://www.moximetrics.org'>
             Moximetrics
           </a>
         </div>
