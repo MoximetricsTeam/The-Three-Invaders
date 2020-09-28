@@ -29,7 +29,6 @@ function BookCover({ className }) {
 export default styled(BookCover)`
   .book-container {
     display: flex;
-
     align-items: center;
     justify-content: center;
     perspective: 1300px;
@@ -68,7 +67,7 @@ export default styled(BookCover)`
     transform: translateZ(25px);
     background-color: #01060f;
     border-radius: 0 2px 2px 0;
-    box-shadow: 5px 5px 20px #666;
+    /* box-shadow: 5px 5px 20px #666; */
   }
 
   .book::before {
@@ -116,7 +115,7 @@ export default styled(BookCover)`
     transform: translateZ(-25px);
     background-color: #01060f;
     border-radius: 0 2px 2px 0;
-    box-shadow: -10px 0 50px 10px #666;
+    /* box-shadow: -10px 0 50px 10px #666; */
   }
   /* Mobile Style */
   @media (max-width: 450px) {
