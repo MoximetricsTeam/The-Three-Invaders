@@ -4,7 +4,8 @@ import styled from 'styled-components';
 const ContactForm = () => {
   return (
     <FormWrapper>
-      <form name='contact' method='POST' data-netlify='true'>
+      <form name='contact-submissions' method='POST' data-netlify='true'>
+        <input type='hidden' name='contact-form' value='contact-submissions' />
         <p className='paragraph'>
           If you'd like to get in touch with Professor Abdulrauf please fill out
           the form below along with the purpose of your inquiry and we will
