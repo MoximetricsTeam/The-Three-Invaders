@@ -6,10 +6,11 @@ const ContactForm = () => {
     <FormWrapper>
       <form
         name='contact'
-        method='POST'
+        method='post'
         data-netlify='true'
         data-netlify-honeypot='bot-field'
       >
+        <input type='hidden' name='bot-field' />
         <input type='hidden' name='form-name' value='contact' />
         <p className='paragraph'>
           If you'd like to get in touch with Professor Abdulrauf please fill out
@@ -26,7 +27,6 @@ const ContactForm = () => {
             <input placeholder='Email' type='email' name='email' />
           </label>
         </p>
-
         <p>
           <label>
             <textarea placeholder='Message' name='message'></textarea>
