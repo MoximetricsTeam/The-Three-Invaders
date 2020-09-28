@@ -65,6 +65,7 @@ const FormWrapper = styled.div`
   textarea,
   input {
     padding-left: 0.5rem;
+    min-width: 30vw;
   }
 `;
 

@@ -9,24 +9,27 @@ function BookSummery({ className }) {
       <BookCover className='cover' />
       <div className='textContainer'>
         <Title lite>
-          <h1>The Three Invader</h1>
+          <h1>Three Invaders</h1>
         </Title>
         <Text lite>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Text>
-        <Text lite>
-          Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum
+          Politicians for decades have debated and posed solutions for the
+          troubled region we know as the “Middle East” to no avail. As a
+          neurosurgeon, Saleem Abdulrauf has treated hundreds of patients with
+          complex brain tumors and aneurysms. This involves review of published
+          data, critical analysis of available treatment options, analysis of
+          complex problems, and thinking outside the box. In some cases,
+          Professor Abdulrauf has even had to develop new surgical techniques to
+          cure his patients. Throughout this process he has learned to
+          systematically and scientifically break down a problem to come up with
+          effective solutions. In Three Invaders, Professor Abdulrauf employs
+          the same strategy to evaluate long-standing conflicts and present
+          novel solutions. In breaking down these conflicts, he shares with the
+          reader omitted historical facts and provides insights into previously
+          undisclosed geopolitics of popular culture - in particular the
+          2,000-year cultural, military, and political history of the
+          interaction among the peoples of the three Abrahamic religions
+          (Judaism, Christianity, and Islam), with a special focus on the past
+          100 years.
         </Text>
       </div>
     </section>
