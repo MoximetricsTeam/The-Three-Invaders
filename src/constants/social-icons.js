@@ -10,19 +10,19 @@ import {
 export default [
   {
     icon: <FaFacebookF />,
-    url: "https://facebook.com",
+    url: "https://Facebook.com/Threeinvaders",
   },
   {
     icon: <FaTwitter />,
-    url: "https://twitter.com",
+    url: "https://twitter.com/abdulsrisaleem",
   },
   {
     icon: <FaInstagram />,
-    url: "https://instagrame.com",
+    url: "https://www.instagram.com/prof_abdulrauf",
   },
   {
     icon: <FaLinkedinIn />,
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/saleemabdulrauf/",
   },
   {
     icon: <FaYoutube />,

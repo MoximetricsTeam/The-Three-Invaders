@@ -83,13 +83,17 @@ export default styled(Author)`
   .imgContainer {
     width: 30%;
     float: left;
-    margin-right: 60px;
+    margin-right: 50px;
     shape-outside: ellipse();
   }
   /* .textContainer {
     width: 60%;
   } */
-
+  @media (max-width: 1300px) {
+    .innerContainer {
+      max-width: 980px;
+    }
+  }
   @media (max-width: 450px) {
     .container {
       margin: 40px 20px;
@@ -101,9 +105,13 @@ export default styled(Author)`
     /* .textContainer {
       width: 100%;
     } */
+    p {
+      text-align: left;
+    }
     .imgContainer {
-      width: 60%;
-      margin: 0 auto 20px;
+      width: 50%;
+      margin-right: 20px;
+      /* margin: 0 auto 20px; */
     }
   }
 `;
