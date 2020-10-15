@@ -8,7 +8,7 @@ import { graphql, useStaticQuery } from "gatsby";
 function BpSum({ className }) {
   const data = useStaticQuery(graphql`
     {
-      file: file(relativePath: { eq: "book-mockup.png" }) {
+      file: file(relativePath: { eq: "cover-mockup.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_tracedSVG

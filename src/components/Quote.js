@@ -6,12 +6,11 @@ function Quote({ className }) {
       <div className="wrapper">
         <div className="frame">
           <div className="text">
-            A critic review, a relevant quote from Dr. Abdulrauf, or another
-            authority on the topics discussed in the book.
+            The Geopolitics of Popular Culture and the Greatest Untold Story of
+            the Past 100 years
           </div>
           <div className="subText">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod temp.
+            The Three Invaders - Dr.Saleem Abdulrauf
           </div>
         </div>
       </div>
