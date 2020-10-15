@@ -1,20 +1,20 @@
-import React from "react";
-import Title from "./Title";
-import buyLinks from "../constants/buyLinks";
-import styled from "styled-components";
+import React from 'react';
+import Title from './Title';
+import buyLinks from '../constants/buyLinks';
+import styled from 'styled-components';
 
 function BuyOptions({ className }) {
   return (
     <section className={className}>
       <Title center>
-        <h2>Buy “The Three Invaders”</h2>
+        <h2>Find Three Invaders at These Retailers</h2>
       </Title>
-      <div className="container">
+      <div className='container'>
         {buyLinks.map((item, index) => {
           return (
-            <div className="linkWrapper" key={index}>
-              <a className="link" href={item.url}>
-                <div className="linkText">{item.text}</div>
+            <div className='linkWrapper' key={index}>
+              <a className='link' href={item.url}>
+                <div className='linkText'>{item.text}</div>
               </a>
             </div>
           );

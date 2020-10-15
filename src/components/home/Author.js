@@ -29,13 +29,33 @@ function Author({ className }) {
           </div>
           <div className='textContainer'>
             <Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Professor Saleem I. Abdulrauf is a world-renowned neurosurgeon who
+              has performed over 2,000 complex brain surgeries. He is the
+              neurosurgeon-in-chief of the Abdulrauf Institute of Neurosurgery™
+              and the founding chairman of the department of neurosurgery at
+              Saint Louis University in St. Louis, Missouri. He is highly
+              published academician and has served as a visiting professor to
+              over 100 universities around the globe. Dr. Abdulrauf has
+              developed a brain bypass surgical procedure as well as
+              microsurgical instruments, both of which have been named after
+              him. He has authored two textbooks in the field of neurosurgery,
+              including the reference textbook for brain bypass surgery. Three
+              Invaders is his first book written for the general public
+            </Text>
+            <Text>
+              Dr. Abdulrauf has always been interested in larger social and
+              humanitarian issues. He co-authored a peer-reviewed article in
+              2019 which examined scientific proof of Nazi crimes against Jews
+              during WWII titled “Crimes Against the Nervous System:
+              Neurological References During the Nuremberg Trials.”
+            </Text>
+            <Text>
+              Dr. Abdulrauf’s ancestors hailed from the heart of Arabia in the
+              region known as Hejaz, the birthplace of the Arab and Islamic
+              civilizations. He grew up in the heart of the American Midwest, a
+              region known for its traditional American spirit. This background
+              and blend of cultures gives him a unique perspective on the larger
+              issues discussed in this book.
             </Text>
           </div>
         </div>
