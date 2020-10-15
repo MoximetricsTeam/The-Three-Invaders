@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-const BookImgComp = () => {
+function BookImgComp({ className }) {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "book-img-comp.png" }) {
@@ -15,7 +16,18 @@ const BookImgComp = () => {
     }
   `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
-};
+  return (
+    <section>
+      <div className={className}>
+        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+      </div>
+    </section>
+  );
+}
 
-export default BookImgComp;
+export default styled(BookImgComp)`
+  margin-top: -150px;
+  @media (max-width: 1224px) {
+    margin-top: 0;
+  }
+`;

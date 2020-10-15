@@ -1,9 +1,9 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-import styled from 'styled-components';
-import Title from '../../components/Title';
-import Text from '../../components/Text';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import styled from "styled-components";
+import Title from "../../components/Title";
+import Text from "../../components/Text";
 
 function Author({ className }) {
   const data = useStaticQuery(graphql`
@@ -19,15 +19,15 @@ function Author({ className }) {
   `);
   return (
     <section className={className}>
-      <div className='container'>
+      <div className="container">
         <Title center>
           <h2>About Dr. Saleem I. Abdulrauf</h2>
         </Title>
-        <div className='innerContainer'>
-          <div className='imgContainer'>
-            <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-          </div>
-          <div className='textContainer'>
+        <div className="innerContainer">
+          <div className="textContainer">
+            <div className="imgContainer">
+              <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+            </div>
             <Text>
               Professor Saleem I. Abdulrauf is a world-renowned neurosurgeon who
               has performed over 2,000 complex brain surgeries. He is the
@@ -74,17 +74,21 @@ export default styled(Author)`
   .innerContainer {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    max-width: 980px;
+    /* align-items: center; */
+    /* max-width: 980px; */
+    width: 100%;
     margin: auto;
     padding: 20px;
   }
   .imgContainer {
     width: 30%;
+    float: left;
+    margin-right: 60px;
+    shape-outside: ellipse();
   }
-  .textContainer {
+  /* .textContainer {
     width: 60%;
-  }
+  } */
 
   @media (max-width: 450px) {
     .container {
@@ -94,9 +98,9 @@ export default styled(Author)`
     .innerContainer {
       display: flow-root;
     }
-    .textContainer {
+    /* .textContainer {
       width: 100%;
-    }
+    } */
     .imgContainer {
       width: 60%;
       margin: 0 auto 20px;

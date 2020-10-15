@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
-import Title from '../../components/Title';
-import Text from '../../components/Text';
-import { graphql, useStaticQuery } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
+import Title from "../../components/Title";
+import Text from "../../components/Text";
+import { graphql, useStaticQuery } from "gatsby";
 
 function BpSum({ className }) {
   const data = useStaticQuery(graphql`
@@ -19,42 +19,43 @@ function BpSum({ className }) {
   `);
   return (
     <section className={className}>
-      <div className='wrapper'>
-        <div className='mockUp'>
+      <div className="wrapper">
+        <div className="mockUp">
           <Img fluid={data.file.childImageSharp.fluid} />
         </div>
-        <div className='textContainer'>
+        <div className="textContainer">
           <Title>
             <h1>Three Invaders</h1>
           </Title>
           <Text>
-            <b>Vexing Questions the Author Answers in the Book:</b>
+            <b> 5 Vexing Questions the Author Answers in the Book:</b>
           </Text>
           <Text>
-            <em>Back to the Future</em> a film about time travel set in
-            America’s 1950s, is one of the most iconic movies of a generation.
-            Why did Steven Spielberg, in this science fiction movie, choose to
-            make the bad guy an Arab character? In a recent survey, a
-            Pittsburgh-based research firm posed the question “Should Americans,
-            as part of their school curriculum, learn Arabic Numerals?”; 56% of
-            the 3,200 respondents said no, and 15% had no opinion. Perhaps many
-            among the respondents did not know that Arabic numerals are the
-            numbers 0 to 9 which we use every day, reflecting a deep bias. How
-            is this bias connected to the movie Back to the Future?
+            <strong>Question 1:</strong> <em>Back to the Future</em> a film
+            about time travel set in America’s 1950s, is one of the most iconic
+            movies of a generation. Why did Steven Spielberg, in this science
+            fiction movie, choose to make the bad guy an Arab character? In a
+            recent survey, a Pittsburgh-based research firm posed the question
+            “Should Americans, as part of their school curriculum, learn Arabic
+            Numerals?”; 56% of the 3,200 respondents said no, and 15% had no
+            opinion. Perhaps many among the respondents did not know that Arabic
+            numerals are the numbers 0 to 9 which we use every day, reflecting a
+            deep bias. How is this bias connected to the movie Back to the
+            Future?
           </Text>
           <Text>
-            Terrorists planted a bomb in the basement of a church, and in the
-            ensuing explosion, four young girls—11-year-old Denise McNair, and
-            three 14-year-olds, Addie Mae Collins, Carole Robertson, and Cynthia
-            Wesley—were killed. This occurred on September 15, 1963, in the city
-            of Birmingham, Alabama. The four girls who died that day were
-            African American. The terrorists who committed the bombing were
-            White Christian extremists belonging to the KKK, for whom this was
-            the third terrorist bombing in Birmingham in 11 days. Why did the
-            mainstream media never label these men terrorists and the KKK a
-            terrorist organization?
+            <strong>Question 2:</strong> Terrorists planted a bomb in the
+            basement of a church, and in the ensuing explosion, four young
+            girls—11-year-old Denise McNair, and three 14-year-olds, Addie Mae
+            Collins, Carole Robertson, and Cynthia Wesley—were killed. This
+            occurred on September 15, 1963, in the city of Birmingham, Alabama.
+            The four girls who died that day were African American. The
+            terrorists who committed the bombing were White Christian extremists
+            belonging to the KKK, for whom this was the third terrorist bombing
+            in Birmingham in 11 days. Why did the mainstream media never label
+            these men terrorists and the KKK a terrorist organization?
           </Text>
-          <Text>
+          {/* <Text>
             “Then there came to our places a large army, who killed many men and
             took me and brought me to the great sea and sold me into the hands
             of the Christians, who bound me and sent me on board a great ship
@@ -95,7 +96,7 @@ function BpSum({ className }) {
             take all refugees except Christian ones. The west would be in a
             state of frenzy.” So why are these egregious acts tolerated by the
             world’s civilized societies and governments?
-          </Text>
+          </Text> */}
         </div>
       </div>
     </section>
@@ -117,7 +118,7 @@ export default styled(BpSum)`
     width: 40%;
     margin: auto;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 1024px) {
     .wrapper {
       display: flow-root;
       margin-top: 40px;

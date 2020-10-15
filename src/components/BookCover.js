@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import Img from 'gatsby-image';
-import { graphql, useStaticQuery } from 'gatsby';
-import { Link } from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import Img from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 function BookCover({ className }) {
   const data = useStaticQuery(graphql`
     {
-      file: file(relativePath: { eq: "book-cover.jpg" }) {
+      file: file(relativePath: { eq: "cover.png" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -17,8 +17,8 @@ function BookCover({ className }) {
   `);
   return (
     <div className={className}>
-      <Link to='/book' className='book-container'>
-        <div className='book'>
+      <Link to="/book" className="book-container">
+        <div className="book">
           <Img fluid={data.file.childImageSharp.fluid} />
         </div>
       </Link>
@@ -72,7 +72,7 @@ export default styled(BookCover)`
 
   .book::before {
     position: absolute;
-    content: ' ';
+    content: " ";
     background-color: blue;
     left: 0;
     top: 3px;
@@ -109,7 +109,7 @@ export default styled(BookCover)`
     position: absolute;
     top: 0;
     left: 0;
-    content: ' ';
+    content: " ";
     width: 350px;
     height: 525px;
     transform: translateZ(-25px);
