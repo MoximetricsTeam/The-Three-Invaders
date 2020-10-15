@@ -1,34 +1,42 @@
-import React from 'react';
-import Title from './Title';
-import buyLinks from '../constants/buyLinks';
-import styled from 'styled-components';
+import React from "react";
+import Title from "./Title";
+import buyLinks from "../constants/buyLinks";
+import styled from "styled-components";
 
 function BuyOptions({ className }) {
   return (
     <section className={className}>
-      <Title center>
-        <h2>Find Three Invaders at These Retailers</h2>
-      </Title>
-      <div className='container'>
-        {buyLinks.map((item, index) => {
-          return (
-            <div className='linkWrapper' key={index}>
-              <a className='link' href={item.url}>
-                <div className='linkText'>{item.text}</div>
-              </a>
-            </div>
-          );
-        })}
+      <div className="wrapper">
+        <Title center>
+          <h2>Find Three Invaders at These Retailers</h2>
+        </Title>
+        <div className="container">
+          {buyLinks.map((item, index) => {
+            return (
+              <div className="linkWrapper" key={index}>
+                <a className="link" href={item.url}>
+                  <div className="linkText">{item.text}</div>
+                </a>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );
 }
 
 export default styled(BuyOptions)`
-  max-width: 1100px;
-  margin: 90px auto;
-  padding-bottom: 25px;
-  border-bottom: 1px solid #c5c5c5;
+  background: #eee;
+  height: 100%;
+  padding: 90px 0;
+  .wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #c5c5c5;
+  }
+
   .container {
     display: flex;
     flex-wrap: wrap;
