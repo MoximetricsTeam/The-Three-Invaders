@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import Title from '../../components/Title';
 import styled from 'styled-components';
 import BookCover from '../../components/BookCover';
 import Text from '../../components/Text';
+
+
 function BookSummery({ className }) {
   return (
     <section className={className}>
@@ -31,6 +34,7 @@ function BookSummery({ className }) {
           (Judaism, Christianity, and Islam), with a special focus on the past
           100 years.
         </Text>
+        <Link to="/book">Learn More</Link>
       </div>
     </section>
   );
@@ -53,6 +57,13 @@ export default styled(BookSummery)`
     margin: auto 20px;
     padding: 20px 0;
     border-bottom: 1px solid #636365;
+  }
+
+  a, a:visited{
+    color: var(--tertiaryColor);
+  }
+    a:hover{
+    color: var(--offWhite);
   }
 
   @media (max-width: 450px) {

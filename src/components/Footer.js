@@ -28,7 +28,7 @@ function Footer({ className }) {
         <div className='credit'>
           © {new Date().getFullYear()}, Web Design by
           {` `}
-          <a className='credit' href='https://www.moximetrics.org'>
+          <a className='credit' href='https://www.moximetrics.com'>
             Moximetrics
           </a>
         </div>
