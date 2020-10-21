@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import { Link } from 'gatsby';
 import styled from "styled-components";
 import Title from "../../components/Title";
 import Text from "../../components/Text";
@@ -57,6 +58,8 @@ function Author({ className }) {
               and blend of cultures gives him a unique perspective on the larger
               issues discussed in this book.
             </Text>
+
+             <Link to="/bio">Learn More</Link>
           </div>
         </div>
       </div>
@@ -85,6 +88,13 @@ export default styled(Author)`
     float: left;
     margin-right: 50px;
     shape-outside: ellipse();
+  }
+
+    a, a:visited{
+   color var(--secondaryColor);
+  }
+    a:hover{
+     color: var(--tertiaryColor);
   }
   /* .textContainer {
     width: 60%;
