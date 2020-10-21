@@ -9,9 +9,9 @@ function Quote({ className }) {
             The Geopolitics of Popular Culture and the Greatest Untold Story of
             the Past 100 years
           </div>
-          <div className="subText">
+          {/* <div className="subText">
             The Three Invaders - Dr.Saleem Abdulrauf
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
