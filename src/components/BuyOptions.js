@@ -11,7 +11,7 @@ function BuyOptions({ className }) {
           <h2>Find Three Invaders at These Retailers</h2>
         </Title>
         <div className="container">
-          {buyLinks.map((item, index) => {
+          {/* {buyLinks.map((item, index) => {
             return (
               <div className="linkWrapper" key={index}>
                 <a className="link" href={item.url}>
@@ -19,7 +19,9 @@ function BuyOptions({ className }) {
                 </a>
               </div>
             );
-          })}
+          })} */}
+
+          <div >Retailer Options Coming Soon</div>
         </div>
       </div>
     </section>
@@ -41,10 +43,10 @@ export default styled(BuyOptions)`
     display: flex;
     flex-wrap: wrap;
     max-width: 980px;
-
     margin: auto;
     justify-content: space-around;
   }
+
   .link {
     font-size: 16px;
     text-transform: uppercase;
@@ -65,6 +67,6 @@ export default styled(BuyOptions)`
     padding: 3px 0;
   }
   @media (max-width: 450px) {
-    margin: 40px 20px;
+    padding: 40px 20px;
   }
 `;
