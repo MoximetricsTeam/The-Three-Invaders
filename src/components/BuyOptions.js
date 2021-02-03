@@ -26,7 +26,7 @@ function BuyOptions({ className }) {
         </div>
         
       </div> 
-      <div className="available">
+      {/* <div className="available">
         <div className="variants ">
           <a href="https://www.amazon.com/Three-Invaders-Deliberate-Revision-History-ebook/dp/B08MV8NG31/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" rel="noopener norefferer">
             <span className="variantItem ">Kindle</span> 
@@ -38,7 +38,7 @@ function BuyOptions({ className }) {
           <span className="variantItem ">Paperback</span>
         </a>  
         </div>
-      </div>
+      </div> */}
 
 
     </section>
