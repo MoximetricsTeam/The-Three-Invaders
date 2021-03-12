@@ -11,6 +11,10 @@ export default [
     path: '/bio',
     text: 'Bio',
   },
+    {
+    path: '/press',
+    text: 'press',
+  },
   {
     path: '/contact',
     text: 'Contact',
