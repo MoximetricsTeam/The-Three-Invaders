@@ -59,12 +59,14 @@ padding: 20px;
       h2{
         margin-top: 16px;
       line-height: 1.5;
-      letter-spacing: 1px;
+      letter-spacing: .8px;
 
     }
         .subTitle{
       padding-top: 15px;
       font-size: 16px;
+      
+      
     }
   }
 `;
