@@ -162,11 +162,14 @@ color: var(--textColor);
     }
     h2{
       line-height: 1.5;
-           letter-spacing: 1px;
+           letter-spacing: .8px;
     }
     .subTitle{
       padding-top: 15px;
       font-size: 16px;
+    letter-spacing: .5px;
+     line-height: 1.5;
+     etter-spacing: .5px;
     }
     .artImg {
     max-width: 100%;
